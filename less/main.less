@@ -1,0 +1,70 @@
+/* Header  */
+.main {
+
+	color: #fff;
+	}
+
+/* Информационное меню */
+	.main-header {
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px 0;
+  &_title {
+  	.medium();
+  	margin-left: 15px;
+  	font-size: 20px;
+  }
+  &_phone {
+  	a {
+  		display: block;
+  		text-align: right;
+  		text-decoration: none;
+  	}
+  }
+  &_btn {
+  	margin: 10px 0 35px;
+  }
+	}
+	.header-phone {
+		.bold();
+		font-size: 20px;
+		color: #fff;
+		&:hover {
+			color: darken(#fff, 20%);
+	}
+		}
+	.header-call {
+		.medium();
+		font-size: 15px;
+  color: @colors_btn;	
+  &:hover {
+  	color: darken(@colors_btn, 10%);
+  }
+ }
+
+/* Контент меню */
+.main-content {
+	&_title {
+		&-info {
+			h1 {
+				margin-top: 80px;
+				.bold();
+				font-size: 30px;
+			}
+			p {
+				.bold();
+				font-size: 23px;
+			}
+			img {
+				width: 300px;
+				margin-bottom: 30px;
+			}
+		}
+		&-rex {
+			img {
+				width: 400px;
+				margin-top: 30%;
+			}
+		}
+	}
+}

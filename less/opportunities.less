@@ -1,0 +1,90 @@
+/* Блок с возможностями */
+.opportunities {
+	background-color: @colors-fon_light;
+	color: #000;
+	&-block {
+		margin: 90px 60px;
+		/* Про фильмы */
+		&_films {
+			img {
+				display: block;
+				margin: auto;
+			}
+			&-info {
+				margin: 90px 0 0 60px;
+				li {
+					.medium();
+					position: relative;
+					padding-left: 55px;
+					list-style: none;
+					font-size: 22px;
+				}
+				li::before {
+					content: '';
+					position: absolute;
+					left: 0;
+					top: 50%;
+					transform: translateY(-50%);
+					width: 43px;
+					height: 43px;
+					margin: 0;
+					padding: 0;
+					background: url(../img/opportunities/travel-2.png) no-repeat center;
+				}
+				p {
+					.roman();
+					margin: 15px 0 0 55px;
+					font-size: 17px;
+					max-width: 360px;
+				}
+			}
+		}
+		/* Про путешествия */
+		&_travel {
+			position: relative;
+			&-info {
+				margin-top: 60px;
+				li {
+					.medium();
+					position: relative;
+					padding-left: 55px;
+					max-width: 380px;
+					list-style: none;
+					font-size: 22px;
+				}
+				li::before {
+					content: '';
+					position: absolute;
+					left: 0;
+					top: 50%;
+					transform: translateY(-50%);
+					width: 43px;
+					height: 43px;
+					margin: 0;
+					padding: 0;
+					background: url(../img/opportunities/films-2.png) no-repeat center;
+				}
+				p {
+					.roman();
+					margin: 15px 0 0 55px;
+					font-size: 17px;
+					max-width: 380px;
+				}
+			}
+			&-cube {
+				position: absolute;
+				right: 0;
+				top: 25%;
+			}
+			&-img {
+				margin: 100px 0 0 0px;
+			}
+		}
+	}
+}
+.opportunities-block_films-flip {
+	display: none;
+}
+.opportunities-block_travel-flip {
+	display: none;
+}

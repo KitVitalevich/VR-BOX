@@ -1,0 +1,83 @@
+/* Блок с возможностями 2 */
+.opportunitiesTwo {
+	background-color: @colors-fon_light;
+	color: #000;
+	&-block {
+		margin: 60px 60px;
+
+		/* Про спорт */
+		&_sport {
+			img {
+				display: block;
+				margin: auto;
+			}
+			&-info {
+				margin: 110px 0 0 60px;
+				li {
+					.medium();
+					position: relative;
+					padding-left: 55px;
+					list-style: none;
+					line-height: 1.2;
+					font-size: 22px;
+				}
+				li::before {
+					content: '';
+					position: absolute;
+					left: 0;
+					top: 50%;
+					transform: translateY(-50%);
+					width: 43px;
+					height: 43px;
+					margin: 0;
+					padding: 0;
+					background: url(../img/games/gamepad.png) no-repeat center;
+				}
+				p {
+					.roman();
+					margin: 15px 0 0 55px;
+					font-size: 17px;
+					max-width: 360px;
+				}
+			}
+		}
+
+		/* Про игры */
+		&_game {
+			position: relative;
+			&-info {
+				margin-top: 60px;
+				li {
+					.medium();
+					position: relative;
+					padding-left: 55px;
+					max-width: 380px;
+					list-style: none;
+					line-height: 1.2;
+					font-size: 22px;
+				}
+				li::before {
+					content: '';
+					position: absolute;
+					left: 0;
+					top: 50%;
+					transform: translateY(-50%);
+					width: 43px;
+					height: 43px;
+					margin: 0;
+					padding: 0;
+					background: url(../img/games/ball.png) no-repeat center;
+				}
+				p {
+					.roman();
+					margin: 15px 0 0 55px;
+					font-size: 17px;
+					max-width: 380px;
+				}
+			}
+			img {
+				margin: 100px 0 0 60px;
+			}
+		}
+	}
+}

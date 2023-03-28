@@ -1,0 +1,112 @@
+/* Блок заказать */
+.delivery {
+	color: #fff;
+	&-block {
+		margin: 40px 0;
+
+		/* Информация */
+		&_title {
+			h2 {
+				.black();
+				font-size: 35px;
+			}
+			&-arrow {
+				.medium();
+				font-size: 18px;
+				position: relative;
+				background-color: #18a7d0;
+				padding: 5px 10px 5px 15px;
+				margin: 20px 0 35px;
+				max-width: 480px;
+			}
+			&-arrow::after {
+				content: '';
+				display: block;
+				position: absolute;
+				border-top: 30px solid transparent;
+				border-bottom: 30px solid transparent;
+				top: 0;
+				border-left: 30px solid @colors_arrow;
+				left: auto;
+				right: -30px;
+			}
+			li {
+				.medium();
+				font-size: 18px;
+				position: relative;
+				display: inline-block;
+				vertical-align: top;
+				padding-left: 45px;
+				margin-right: 20px;
+				max-width: 237px;
+				list-style: none;
+			}
+			&-watch::before {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 0%;
+				padding: 0;
+				margin: 0;
+				width: 35px;
+				height: 40px;
+				background: url(../img/delivery/watch.png) no-repeat center;
+				background-size: cover;
+			}
+			&-bag::before {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 0%;
+				padding: 0;
+				margin: 0;
+				width: 35px;
+				height: 40px;
+				background: url(../img/delivery/bag.png) no-repeat center;
+				background-size: cover;
+			}
+		}
+	}
+}
+
+/* Форма */
+.delivery .delivery-block form {
+	display: block;
+	background: #000;
+	text-align: center;
+	border: 4px solid @colors_arrow;
+	border-radius: 4px;
+	padding: 25px 55px;
+	h3 {
+		.medium();
+		font-size: 22px;
+		margin: 5px 0 30px;
+	}
+	input {
+		background: #000;
+		border: 2px solid #fff;
+		border-radius: 4px;
+		margin-bottom: 10px;
+		padding: 15px 30px;
+	}
+	input::placeholder {
+		.roman();
+		font-size: 18px;
+		color: #fff;
+	}
+ .form-btn {
+		.bold();
+		font-size: 16px;
+		display: block;
+		margin: 0 auto 10px;
+	}
+	small {
+		.roman();
+		font-size: 15px;
+		margin-top: 10px;
+	}
+}
+
+.delivery-block_title-flip {
+	display: none;
+}

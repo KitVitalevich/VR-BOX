@@ -1,0 +1,42 @@
+/* Блок как мы работаем */
+.OurWorks {
+	background-color: @colors-fon_light;
+	position: relative;
+	&-block {
+		margin: 90px 0;
+		text-align: center;
+		&_title {
+			h2 {
+				.black();
+				font-size: 35px;
+			}
+			span {
+				display: inline-block;
+				border-top: 5px solid @colors_arrow;
+				padding: 0 25px 0;
+				margin-bottom: 60px;
+			}
+		}
+		&_content {
+			&-img {
+				line-height: 150px;
+				img {
+					vertical-align: bottom;
+				}
+			}
+			p {
+				.roman();
+				font-size: 17px;
+				margin-top: 20px;
+				span {
+					display: none;
+				}
+			}
+		}
+	}
+	&-cube {
+		position: absolute;
+		bottom: -50px;
+		left: 0;
+	}
+}

@@ -1,0 +1,53 @@
+/* Блок с приложениями */
+.apps {
+	background: @colors-fon_light;
+	&-block {
+		margin: 90px 0;
+		&_title {
+			text-align: center;
+			h2 {
+				.black();
+				font-size: 35px;
+			}
+			span {
+				border-top: 5px solid @colors_arrow;
+				padding: 0 25px 0;
+			}
+			img {
+				display: block;
+				margin: 0 auto;
+			}
+		}
+		&_content {
+			&-img {
+				position: relative;
+				line-height: 200px;
+				min-height: 220px;
+				margin-left: -60px;
+				img {
+					vertical-align: bottom;
+				}
+				&-sis {
+					margin-left: -40px;
+				}
+			}
+			h4 {
+				.medium();
+				font-size: 22px;
+			}
+			p {
+				.roman();
+				font-size: 17px;
+				margin-bottom: 40px;
+			}
+		}
+		&_btn {
+			margin: auto;
+			font-size: 18px;
+		}
+	}
+	&-img_zombie {
+  margin-top: 70px;
+	}
+}
+

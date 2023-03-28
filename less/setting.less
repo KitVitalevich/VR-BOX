@@ -1,0 +1,122 @@
+/* Шрифты */
+@font-face {
+    font-family: 'HelveticaNeueCyr_black';
+    src: url('../fonts/HelveticaNeueCyr-Black.eot');
+    src: url('../fonts/HelveticaNeueCyr-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeueCyr-Black.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueCyr-Black.woff') format('woff'),
+        url('../fonts/HelveticaNeueCyr-Black.ttf') format('truetype'),
+        url('../fonts/HelveticaNeueCyr-Black.svg#HelveticaNeueCyr-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr_bold';
+    src: url('../fonts/HelveticaNeueCyr-Bold.eot');
+    src: url('../fonts/HelveticaNeueCyr-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeueCyr-Bold.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueCyr-Bold.woff') format('woff'),
+        url('../fonts/HelveticaNeueCyr-Bold.ttf') format('truetype'),
+        url('../fonts/HelveticaNeueCyr-Bold.svg#HelveticaNeueCyr-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr_roman';
+    src: url('../fonts/HelveticaNeueCyr-Roman.eot');
+    src: url('../fonts/HelveticaNeueCyr-Roman.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeueCyr-Roman.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueCyr-Roman.woff') format('woff'),
+        url('../fonts/HelveticaNeueCyr-Roman.ttf') format('truetype'),
+        url('../fonts/HelveticaNeueCyr-Roman.svg#HelveticaNeueCyr-Roman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr_medium';
+    src: url('../fonts/HelveticaNeueCyr-Medium.eot');
+    src: url('../fonts/HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeueCyr-Medium.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueCyr-Medium.woff') format('woff'),
+        url('../fonts/HelveticaNeueCyr-Medium.ttf') format('truetype'),
+        url('../fonts/HelveticaNeueCyr-Medium.svg#HelveticaNeueCyr-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Qanelas_medium';
+    src: url('../fonts/Qanelas-Medium.eot');
+    src: local('../fonts/Qanelas Medium'), local('Qanelas-Medium'),
+        url('../fonts/Qanelas-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Qanelas-Medium.woff2') format('woff2'),
+        url('../fonts/Qanelas-Medium.woff') format('woff'),
+        url('../fonts/Qanelas-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+.black() {
+    font-family: 'HelveticaNeueCyr_black', sans-serif;
+}
+.bold() {
+    font-family: 'HelveticaNeueCyr_bold', sans-serif;
+}
+.roman() {
+    font-family: 'HelveticaNeueCyr_roman', sans-serif;
+}
+.medium() {
+    font-family: 'HelveticaNeueCyr_medium', sans-serif;
+}
+.mediumq() {
+    font-family: 'Qanelas_medium', sans-serif;
+}
+
+/* Цвета */
+@colors_btn: #95c62c;
+@colors-fon_light: #fcfcf6;
+@colors-fon_beige: #f8f8f0; 
+@colors-fon_black: #000000;
+@colors_arrow: #18a7d0;
+@colors-border: #21a3af;
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+button, input, a, textarea {
+    outline: none;
+}
+a:hover {
+  text-decoration: none;
+  outline: none;
+}
+
+/* Настройки элементов */
+
+.button {
+    display: block;
+    .medium();
+    font-size: 14px;
+    text-transform: uppercase;
+    text-shadow: 0px 1px 2px rgba(87, 143, 34, 0.004);
+    background-color: @colors_btn;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 15px 35px;
+}
+.button:hover {
+    background-color: darken(@colors_btn, 10%);
+}
+

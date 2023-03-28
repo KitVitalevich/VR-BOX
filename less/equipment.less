@@ -1,0 +1,85 @@
+/* Блок с комплектаций */
+.equipment {
+	background-color: @colors-fon_beige;
+	color: #000;
+	&-title {
+		h2 {
+			.black();
+			font-size: 35px;
+			margin-top: 100px;
+			span {
+				font-size: 26px;
+			}
+		}
+		p {
+			max-width: 600px;
+			margin-bottom: 25px;
+			.roman();
+			font-size: 17px;
+			margin-top: 35px;
+		}
+		&_box {
+			display: none;
+		}
+	}
+	&-blocks {
+		display: inline-block;
+		vertical-align: top;
+		margin-right: 30px;
+		p {
+			.medium();
+			font-size: 20px;
+			span {
+				display: inline-block;
+				.medium();
+				font-size: 25px;
+				color: #b61919;
+			}
+		}
+		span {
+			display: block;
+			.roman();
+			font-size: 17px;
+		}
+		strong {
+			.roman();
+			font-size: 17px;
+		}
+		&_price {
+			display: inline-block;
+		}
+		&_indent {
+   margin-top: 25px;
+		}
+	}
+	&-btn {
+		border-bottom: 4px solid #76ae0c;
+		margin: 20px 0 50px;
+	}
+
+	&-box {
+		position: relative;
+		img {
+			position: absolute;
+			margin-top: 100px;
+			left: -60px;
+		}
+		p {
+			position: absolute;
+			.mediumq();
+			font-size: 25px;
+			margin-top: 93%;
+			margin-left: 50%;
+		}
+		span {
+			.roman();
+			position: absolute;
+			font-size: 17px;
+			max-width: 200px;
+			margin-top: 100%;
+			margin-left: 45%;
+			line-height: 1.2;
+			text-align: right;
+		}
+	}
+}

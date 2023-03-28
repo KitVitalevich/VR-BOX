@@ -1,0 +1,60 @@
+/* Блок с отзывами */
+.feedback {
+	background: @colors-fon_beige;
+	&-block {
+		margin: 90px 0;
+		position: relative;
+		&_title {
+			text-align: center;
+			h2 {
+				.black();
+			 font-size: 35px;
+			}
+			span {
+				display: inline-block;
+				border-top: 5px solid @colors_arrow;
+				padding: 0 25px 0;
+				margin-bottom: 60px;
+			}
+		}
+	}
+	&-media {
+		display: inline-block;
+		max-width: 49%;
+		background-color: #fff;
+		border: 1px solid #3eb7b7;
+		border-radius: 3px;
+		margin-bottom: 5px;
+		&_left {
+			display: inline-block;
+			padding: 25px;
+		}
+		&_body {
+			position: relative;
+			display: inline-block;
+			h4 {
+				position: absolute;
+				.medium();
+				font-size: 18px;
+				width: 210px;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+		}
+		p {
+			.roman();
+			font-size: 17px;
+			margin: 0;
+			padding: 0 25px 50px;
+		}
+		&_center {
+			margin-left: 10px;
+		}
+		&_cube {
+			position: absolute;
+			width: 130px;
+			right: -5%;
+			top: 8%;
+		}
+	}
+}

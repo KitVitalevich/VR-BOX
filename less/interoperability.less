@@ -1,0 +1,51 @@
+/* Блок с совместимостью */
+.interoperability {
+	position: relative;
+	background-color: @colors-fon_light;
+	&-block {
+		margin-bottom: 70px;
+		&_on {
+			display: none;
+		}
+		&_title {
+			h2 {
+				.black();
+				font-size: 35px;
+				margin-bottom: 70px;
+			}
+		}
+		&_phone {
+			display: flex;
+			p {
+			 .medium();
+			 font-size: 22px;				
+			}
+			&-iphone {
+				text-align: center;
+			}
+			&-htc {
+				text-align: center;
+				margin-left: 30px;
+			}
+			&-win {
+				text-align: center;
+				margin-left: 30px;
+			}
+		}
+		&_box {
+			img {
+				width: 510px;
+			}
+			p {
+				.medium();
+				font-size: 22px;
+				line-height: 1.2;
+			}
+		}
+	}
+	&-cube {
+		position: absolute;
+		top: -120px;
+		right: 0px;
+	}
+}

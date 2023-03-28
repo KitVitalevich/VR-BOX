@@ -1,0 +1,42 @@
+/* Блок с видео */
+.video {
+
+	color: #fff;
+	&-block {
+		margin: 90px;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		&_title {
+			.black();
+			font-size: 35px;
+			max-width: 400px;
+			text-align: center; 
+			margin-bottom: 20px;
+		}
+		&_button {
+			button {
+				display: block;
+				background-color: transparent;
+				border: 5px solid #fff;
+				border-radius: 50%;
+				padding: 20px 18px 20px 24px;
+				img {
+					transition: transform 0.2s;
+				}
+			}
+			button:active {
+				img {
+					transform: scale(0.75);
+				}
+			}
+		}
+		&_text {
+			p {
+				.medium();
+				font-size: 22px;
+				margin-top: 10px;
+			}
+		}
+	}
+}

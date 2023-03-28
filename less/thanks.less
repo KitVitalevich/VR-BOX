@@ -1,0 +1,50 @@
+/* Спасибо! */
+.thanks {
+	background: url(../img/main/main-bg.jpg) center no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	background-color: #020D0D;
+	color: #fff;
+	position: relative;
+	display: flex;
+	align-items: center;
+	min-height: 100vh;
+	max-width: 100vw;
+		img {
+		position: absolute;
+		align-items: center;
+	}
+	.thanks__you {
+		position: relative;
+		text-align: center;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 1;
+			h2 {
+				.black();
+				font-size: 50px;
+				margin-bottom: 30px;
+			}
+			.thanks-btn {
+				display: inline-block;
+				margin: auto;
+				font-size: 14px;
+			}
+	}
+}
+
+@media (max-width: 767px) {
+	.thanks .thanks__you h2 {
+		font-size: 33px;
+	}
+}
+@media (max-width: 425px) {
+	.thanks .thanks__you h2 {
+		font-size: 28px;
+	}
+}
+@media (max-width: 320px) {
+	.thanks .thanks__you h2 {
+		font-size: 24px;
+	}
+}
